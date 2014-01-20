@@ -1,0 +1,154 @@
+start up order a befor b if b is dependent on a, for subsystems
+shutdown reverse
+
+singelton class, (managers)
+
+// Get the one and only instance.
+static RenderManager& get()
+{
+// This function-static will be constructed on the
+// first call to this function.
+static RenderManager sSingleton;
+return sSingleton;
+
+or 
+
+
+static RenderManager& get()
+{
+static RenderManager* gpSingleton = NULL;
+if (gpSingleton == NULL)
+{
+gpSingleton = new RenderManager;
+}
+ASSERT(gpSingleton);
+return *gpSingleton;
+
+
+"Brute force approach"
+class RenderManager
+{
+public:
+RenderManager()
+{
+// do nothing
+}
+~RenderManager()
+{
+// do nothing
+}
+void startUp()
+{
+// start up the manager...
+}
+void shutDown()
+{
+// shut down the manager...
+
+container with elements
+Insert, remove, sequential acces, random access, find, sort
+
+
+while (!quit)
+{
+// Update the camera transform based on interactive
+// inputs or by following a predefined path.
+updateCamera();
+// Update positions, orientations and any other
+// relevant visual state of any dynamic elements
+// in the scene.
+updateSceneElements();
+// Render a still frame into an off-screen frame
+// buffer known as the "back buffer".
+renderScene();
+// Swap the back buffer with the front buffer, making
+// the most-recently-rendered image visible
+// on-screen. (Or, in windowed mode, copy (blit) the
+// back buffer’s contents to the front buffer.
+swapBuffers();
+}
+
+Higher-level systems, like AI , might only need to be serviced
+once or twice per second, and they needn’t necessarily be synchronized with
+the rendering loop at all.
+
+
+void main() // Pong
+{
+initGame();
+while (true) // game loop
+{
+readHumanInterfaceDevices();
+if (quitButtonPressed())
+{
+break; // exit the game loop
+}
+movePaddles();
+moveBall();
+collideAndBounceBall();
+if (ballImpactedSide(LEFT_PLAYER))
+{
+incremenentScore(RIGHT_PLAYER);
+resetBall();
+}
+else if (ballImpactedSide(RIGHT_PLAYER))
+{
+incrementScore(LEFT_PLAYER);
+resetBall();
+}
+renderPlayfield();
+}
+}
+
+
+
+
+
+
+
+while (true)
+{
+// Service any and all pending Windows messages.
+MSG msg;
+while (PeekMessage(&msg, NULL, 0, 0) > 0)
+{
+TranslateMessage(&msg);
+DispatchMessage(&msg);
+}
+// No more Windows messages to process – run one
+// iteration of our "real" game loop.
+RunOneIterationOfGameLoop();
+}
+
+^
+One of the side-eff ects of implementing the game loop like this is that Windows
+messages take precedence over rendering and simulating the game. As
+a result, the game will temporarily freeze whenever you resize or drag the
+game’s window around on the desktop.
+
+
+
+class GameFrameListener : public Ogre::FrameListener
+{
+public:
+virtual void frameStarted(const FrameEvent& event)
+{
+// Do things that must happen before the 3D scene
+// is rendered (i.e., service all game engine
+// subsystems).
+pollJoypad(event);
+updatePlayerControls(event);
+updateDynamicsSimulation(event);
+resolveCollisions(event);
+updateCamera(event);
+// etc.
+}
+virtual void frameEnded(const FrameEvent& event)
+{
+// Do things that must happen after the 3D scene
+// has been rendered.
+drawHud(event);
+// etc.
+}
+};
+
