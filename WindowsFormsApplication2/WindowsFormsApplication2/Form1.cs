@@ -27,6 +27,13 @@ namespace WindowsFormsApplication1
         private void Func2()
         {
             //JAWS SKRIV HÄR
+            int fucksGiven = 0;
+            for (int i = 0; i < 10; i++)
+            {
+                fucksGiven += 0;
+            }
+
+            
         }
     }
 }
