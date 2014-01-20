@@ -7,3 +7,5 @@ C:\Users\Jaws\documents\visual studio 2010\Projects\WindowsFormsApplication2\Win
 C:\Users\Jaws\documents\visual studio 2010\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Release\WindowsFormsApplication2.pdb
 C:\Users\Jaws\Documents\GitHub\3D-Pacman\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Release\WindowsFormsApplication2.exe
 C:\Users\Jaws\Documents\GitHub\3D-Pacman\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Release\WindowsFormsApplication2.pdb
+D:\GitHub\3D-Pacman\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Release\WindowsFormsApplication2.exe
+D:\GitHub\3D-Pacman\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Release\WindowsFormsApplication2.pdb

@@ -22,7 +22,7 @@ namespace WindowsFormsApplication1
         }
         private void Func1()
         {
-            //MYSTERISK SKRIV HÄR
+            int i = 0;
         }
         private void Func2()
         {
