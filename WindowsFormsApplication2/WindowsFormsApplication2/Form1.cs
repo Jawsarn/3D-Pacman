@@ -33,7 +33,8 @@ namespace WindowsFormsApplication1
                 fucksGiven += 0;
             }
 
-            
+            float bin = 3;
+            char test = 'c';
         }
     }
 }
