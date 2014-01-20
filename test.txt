@@ -1,3 +1,8 @@
 It all makes sense now. NEJ det gör det fan inte!
+<<<<<<< HEAD
 OM DU KOLLAR PÅ fuck you apunge!! DIN TEXT SER DU ATT DEN ÄR KVAR OCH INTE ÄR RÖD!
 FUCK YOU!"!!!
+=======
+OM DU KOLLAR PÅ DIN TEXT LOOOOL SER DU ATT DEN ÄR KVAR OCH INTE ÄR RÖD!
+FUCK YOU!"!!!
+>>>>>>> 4736b7938fe6f84acdea0e7319e34e366e019615
