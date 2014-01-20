@@ -23,6 +23,8 @@ namespace WindowsFormsApplication1
         private void Func1()
         {
             int i = 0;
+            i++;
+            //Jag har ändrat massa skit
         }
         private void Func2()
         {
