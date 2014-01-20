@@ -24,7 +24,7 @@ namespace WindowsFormsApplication1
         {
             int i = 0;
             i++;
-            //Jag har ändrat massa skit
+            //Jag har ändrat massa skit ser du det eller fittunge!!!!!!!!!!!!!!!!!!!!!
         }
         private void Func2()
         {
