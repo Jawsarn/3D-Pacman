@@ -9,3 +9,9 @@ C:\Users\Jaws\Documents\GitHub\3D-Pacman\WindowsFormsApplication2\WindowsFormsAp
 C:\Users\Jaws\Documents\GitHub\3D-Pacman\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Release\WindowsFormsApplication2.pdb
 D:\GitHub\3D-Pacman\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Release\WindowsFormsApplication2.exe
 D:\GitHub\3D-Pacman\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Release\WindowsFormsApplication2.pdb
+C:\Users\Jaws\Documents\GitHub\3D-Pacman\WindowsFormsApplication2\WindowsFormsApplication2\bin\Release\WindowsFormsApplication2.exe
+C:\Users\Jaws\Documents\GitHub\3D-Pacman\WindowsFormsApplication2\WindowsFormsApplication2\bin\Release\WindowsFormsApplication2.pdb
+C:\Users\Jaws\Documents\GitHub\3D-Pacman\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Release\WindowsFormsApplication2.csprojResolveAssemblyReference.cache
+C:\Users\Jaws\Documents\GitHub\3D-Pacman\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Release\WindowsFormsApplication1.Form1.resources
+C:\Users\Jaws\Documents\GitHub\3D-Pacman\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Release\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Jaws\Documents\GitHub\3D-Pacman\WindowsFormsApplication2\WindowsFormsApplication2\obj\x86\Release\WindowsFormsApplication2.csproj.GenerateResource.Cache
