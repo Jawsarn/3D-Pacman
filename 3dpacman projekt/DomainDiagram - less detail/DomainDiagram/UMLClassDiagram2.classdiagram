@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="f166e9f3-352c-465d-be1a-35b9390883ae" name="UMLClassDiagram2" linkedPackageId="4bb40b14-d2de-4d76-97b0-49ebc20a7c40" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="48b212a5-1111-4eb8-9b14-107e760fd9c4" name="Screen Manager" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="de31ace1-8447-410e-99c9-8f1ff82b4d8f" />
+        <targetEnds>
+          <association Id="fa0bc95d-c72c-4ca2-bf90-f964be6c606b" isDerived="false" sourceEndRoleName="" targetEndRoleName="Allows" isLeaf="false" isAbstract="false">
+            <classMoniker Id="5db11b5d-406e-437e-824f-b009ebfcfac1" LastKnownName="Game Manager" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5f3b830f-bc6c-4b58-8c48-f582400b9e72" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="adb3cb39-2518-4367-9310-48b3cf9dafcf" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="be2cc89e-f624-421c-ad22-8ff2113302bb" name="Allows" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ace96fdd-6441-429e-bb19-de121a5e0af0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1468502c-0ba1-45b2-86d0-77add0b033d8" />
+          </association>
+          <association Id="f660004b-f231-423d-af8b-25fbf07f9a4e" isDerived="false" sourceEndRoleName="" targetEndRoleName="Allows" isLeaf="false" isAbstract="false">
+            <classMoniker Id="e2fdd258-2226-4529-8097-e67fcecbe40a" LastKnownName="Menu Manager" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1762ffcc-4286-4e0d-a3af-5def73727122" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="96740b12-a5fc-4c37-8650-37df5cc850ee" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6a3fb612-f6a4-4e50-92f3-7c8b7c7c36b1" name="Allows" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f9bedc6b-f82f-4551-a322-e432fbe673ee" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="af904722-999b-42bf-bc5c-7c178a542c24" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9b77f1bf-7264-49ad-8e85-7ec5d8df570e" name="Graphic Interface" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d4c224f0-6782-47dd-a2e4-7feb1e877825" />
+        <targetEnds>
+          <association Id="8661743d-5556-4b83-8702-88c2fc0df696" isDerived="false" sourceEndRoleName="" targetEndRoleName="Instructs" isLeaf="false" isAbstract="false">
+            <classMoniker Id="6eb4121b-69ee-4e9a-b873-bf6a03d7aec6" LastKnownName="Graphic Engine" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="370dc279-927e-407a-9c3b-b0b4d8363af3" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f337b44a-3e1e-4481-8484-4691b70e8f95" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="326ccb14-ae0a-49ea-a707-aaeca96e172a" name="Instructs" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="cad2c512-5e94-44fc-8497-8abe60539b14" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4598a716-7ee5-40a7-8525-99cd1dabc679" />
+          </association>
+          <association Id="43eb9479-bb5c-4bfe-a5f4-593f45e141c8" isDerived="false" sourceEndRoleName="Instructs" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="5db11b5d-406e-437e-824f-b009ebfcfac1" LastKnownName="Game Manager" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="508f0b80-91df-463c-a3ab-10caca00114e" name="Instructs" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e9bb5938-9413-43ed-a5d3-7800162e11a4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1ab9389a-af49-4587-a981-d7f307fbaa20" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8781281a-1913-4ac1-9bf3-e0e09af8b26c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a76a792b-813c-457d-8099-fb3fb03ab522" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="e679fcad-4adb-4880-b2b4-61453565afb9" name="texture GhostTexture" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="03264a95-3f85-4f7f-8ec0-3176cb36bd01" />
+          </property>
+          <property Id="902f3138-92db-4ca3-a35c-73bf47fef0ba" name="vertexArray CandyMech" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="56b80732-72c0-4220-b477-f273bb491e71" />
+          </property>
+          <property Id="b7967c96-cac2-4684-8b5c-b6424543a9c4" name="vertexArray GhostMech" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9faf7b0b-4d3d-4b13-bd7c-b94273484979" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5db11b5d-406e-437e-824f-b009ebfcfac1" name="Game Manager" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="58179265-c9d1-4376-8a3f-64550d9b2403" />
+        <ownedAttributesInternal>
+          <property Id="092c446e-fa40-438c-bfba-637e2a27c168" name="Pacman" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="001926c6-8ef7-4e31-ba7b-62191ffc412f" />
+          </property>
+          <property Id="01b3d0c7-7fc3-4b1b-86e8-5195de28e836" name="AI" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7be69894-abd1-4e6a-a769-35f70406cf8b" />
+          </property>
+          <property Id="e6d7ad9a-4315-4a4a-8c56-38278422bb40" name="Ghost" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0733264d-106d-411f-b153-2f2b01e02619" />
+          </property>
+          <property Id="87b290d2-ae2c-4a8e-9c3b-90a157da29e7" name="Candy" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3c8730bc-4140-4eda-b190-7f98524ccadc" />
+          </property>
+          <property Id="5488eb99-50e5-4051-a654-a76f5ecb7543" name="Map" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a9613655-e216-4dfa-9536-abc7798364d1" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="91aeb5f6-7f6a-4225-9a3e-dbd6a772f0c2" name="Audio Manager" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="cdf39ec8-fa43-48a6-81a0-571f173eade0" />
+        <targetEnds>
+          <association Id="2fd39074-6b35-4270-ab97-5b00944fdbcb" isDerived="false" sourceEndRoleName="Instructs" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="5db11b5d-406e-437e-824f-b009ebfcfac1" LastKnownName="Game Manager" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0f3c5517-dcbc-4535-8872-43f2b81e90d0" name="Instructs" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a704e944-0fc1-4127-9fbc-3f6e32790028" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="455c6499-5e62-491d-9152-1e2dc02fa136" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="59a678ba-b485-482c-bb89-4a6e53c3dad3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="37064ed0-ff45-434e-8985-64c1a3746ae6" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="c233583e-3d37-437c-bd08-fea26ab19905" name="audio Music" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="66183e2c-1274-46f6-bba1-fd493d8806f4" />
+          </property>
+          <property Id="44933cde-f184-480f-93ae-651ed77a461f" name="int Volume" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="57022974-430e-4b20-bea9-aef91effa050" />
+          </property>
+          <property Id="a36b156a-8f8d-44e9-9058-a62180d04b94" name="audio GhostSound" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d525e486-657f-490d-b42a-37e85c0d3327" />
+          </property>
+          <property Id="fe296b6b-bb8a-4796-bc40-4b74f8028515" name="audio PacmanSound" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e2d7b6cf-5694-467c-a8a2-6ff811579852" />
+          </property>
+          <property Id="625b982b-fb88-424e-b159-b44c34c090d7" name="vector3 MusicSourcePosition" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f5b6930f-356d-4c2e-bc28-607170827c0e" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e2fdd258-2226-4529-8097-e67fcecbe40a" name="Menu Manager" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b2073336-9a71-4a15-99cc-5fd38c3a71f7" />
+        <targetEnds>
+          <association Id="f25b032b-f4ab-4d05-8977-426cbbd8ac5c" isDerived="false" sourceEndRoleName="" targetEndRoleName="Instructs" isLeaf="false" isAbstract="false">
+            <classMoniker Id="9b77f1bf-7264-49ad-8e85-7ec5d8df570e" LastKnownName="Graphic Interface" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="eeb10ff7-bc20-4c32-af07-06d624beab61" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2b074597-581c-4d79-8692-8ac4385ab086" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="78e87bbd-db9f-4b31-8b0b-b4d3dfef435b" name="Instructs" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="59e0e708-6437-4a71-8782-6104b7d4e863" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a4856773-adf8-4cf3-89ad-dd78ea54da24" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="80b69941-0b82-46ae-a9fb-ea7097c57f2e" name="Camera" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0f32f210-9763-417b-875c-31f109dbb8ce" />
+        <targetEnds>
+          <association Id="24e2a371-a424-42b3-a20f-2d60f1b5fd5e" isDerived="false" sourceEndRoleName="Gets matrix" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="6eb4121b-69ee-4e9a-b873-bf6a03d7aec6" LastKnownName="Graphic Engine" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5afef68b-44c2-426f-9ed1-1a4f016d8022" name="Gets matrix" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="19d17bbe-2d25-46b1-af06-c26f20ce991e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e35e880c-ce35-4a7d-b5ff-59457f5c7a7a" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a6a6e8b4-32b4-4d80-8349-1aaa942ccb1e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="43289ee0-684d-437f-89c9-d68ba4af7bf0" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6eb4121b-69ee-4e9a-b873-bf6a03d7aec6" name="Graphic Engine" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d2125ee6-fc88-45d3-84b0-9454d6add4c9" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2fe6c80d-9c69-4816-a22c-9f498ff1d501" name="Highscore display" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="629a026c-daff-4b54-8763-e678292dfa11" />
+        <targetEnds>
+          <association Id="4d47956e-24ce-4731-8e0f-984c21c8a758" isDerived="false" sourceEndRoleName="Allows" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="48b212a5-1111-4eb8-9b14-107e760fd9c4" LastKnownName="Screen Manager" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a2483c12-690b-4cfb-93fa-a6c59393c449" name="Allows" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e75b429a-0eb8-4133-b4c9-4c1f6f0b88ab" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d624fe69-6a1c-446c-addf-7d8fd6ffb47f" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d9534fef-7576-49cb-84c2-4dde36062c50" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="39df9907-24ce-403b-9fb4-9e1054930678" />
+          </association>
+          <association Id="54af1820-b60e-4f31-8727-75acd2ef72e3" isDerived="false" sourceEndRoleName="" targetEndRoleName="Instructs" isLeaf="false" isAbstract="false">
+            <classMoniker Id="9b77f1bf-7264-49ad-8e85-7ec5d8df570e" LastKnownName="Graphic Interface" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cc7dc581-04f6-4fb9-84f7-e5281108af91" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2946ed72-ee48-43f0-b90e-c1bab9ddd89a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2d6170c2-8fea-429c-862f-147dfec74eb1" name="Instructs" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5cb67d7d-356a-4c19-ae00-a50c36ab46f4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="dddf43e6-fbc3-422a-8995-166b3f5e4d6f" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="9aeceaad-009e-4212-a1c5-5bb6e5db7130" name="array HighscoreList" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5d351802-052a-4524-8e47-c25be8d90ec9" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="4bb40b14-d2de-4d76-97b0-49ebc20a7c40" name="DomainDiagram">
+    <elementDefinition Id="2d56aa07-c7e5-4d9f-8b79-53ca0f2acbe5" />
+    <profileInstances>
+      <packageHasProfileInstances Id="d0f42ba7-b671-4e8f-aa9c-d327be747a78">
+        <profileInstance Id="f6801799-bcb7-427e-aa0d-60790e6f4f9c" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="d8f5fb96-3572-4dd8-9752-4bf53dfa43d0">
+        <profileInstance Id="33bfa581-3fb2-43ba-8da2-4159aabc3afa" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

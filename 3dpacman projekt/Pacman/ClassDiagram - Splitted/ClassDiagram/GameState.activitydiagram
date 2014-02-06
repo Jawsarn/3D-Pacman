@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="093de277-9242-4dda-a918-210b3207158d" name="GameState" linkedPackageId="7f5aa52a-4a2a-4140-a22a-583335e294b0" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="edf059a4-ecd7-4d79-97f3-46dc05c8c06a">
+      <elementDefinition Id="dec7210a-36e1-49b6-9010-d9212a2442ed" />
+      <body>Screen Manager</body>
+      <annotatedElements>
+        <initialNodeMoniker Id="4f637840-ef0c-47f4-a19c-00098e77853f" LastKnownName="Initial1" />
+      </annotatedElements>
+    </comment>
+    <comment Id="4a552474-848d-46d3-badb-128fe1bc00d3">
+      <elementDefinition Id="b5eb9914-9982-4965-a0ff-940a40bc89c3" />
+      <body>Quit application</body>
+      <annotatedElements>
+        <activityFinalNodeMoniker Id="731a508e-3955-44c0-a17b-a670d54016fd" LastKnownName="ActivityFinal1" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="32a0a3d3-04c6-4228-8df3-bfd7e009f0f9" name="GameState" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="0f647e6d-4b06-4739-b680-ffd612744771" />
+        <nodes>
+          <initialNode Id="4f637840-ef0c-47f4-a19c-00098e77853f" name="Initial1" isLeaf="false">
+            <elementDefinition Id="7617aac3-d901-4616-926a-565ae2c0eb79" />
+            <objectFlowTargets>
+              <objectFlow Id="aa36ba80-ea0c-4140-a08a-63abcbc976fd" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="cccdb4d9-baba-4125-95f0-79c49725b72a" LastKnownName="MenuManager" />
+                <elementDefinition Id="c54396f8-e125-466a-b8fd-3406b08e594b" />
+              </objectFlow>
+            </objectFlowTargets>
+          </initialNode>
+          <objectNode Id="cccdb4d9-baba-4125-95f0-79c49725b72a" name="MenuManager" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="4edf4377-31d0-44cf-87d8-e244d2d01fcf" />
+            <objectFlowTargets>
+              <objectFlow Id="de7f2c22-fd06-4e61-9f5f-fecae70dcb70" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="f92bbf5f-197d-4a6b-9793-5d9096f77f2f" LastKnownName="Clicks button" />
+                <elementDefinition Id="722e02e6-d757-4118-9764-3e37da052efe" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="8ae1adca-9e15-41b7-b919-8a08cb764b45" name="2147483647" value="2147483647">
+                <elementDefinition Id="aa129606-01f0-4ef8-818a-8134ec2774c5" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="90661b35-69c1-48c7-8c98-438e39880577" name="GameManager" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="fe753880-9b81-4e76-a27c-3523fd369e50" />
+            <objectFlowTargets>
+              <objectFlow Id="4e63f7a3-9262-4d29-9ce5-783918a4e8e6" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="b4334a8e-7f06-451e-8aed-b3d74e1c90bd" LastKnownName="Game End" />
+                <elementDefinition Id="56ad2f76-0893-4445-a65e-fafa7b4f1f38" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="08aa1ec4-ae3b-49e5-9278-2f55fcb2ec55" name="2147483647" value="2147483647">
+                <elementDefinition Id="ddbdeb9d-d847-4c79-9358-e979117850bd" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <objectNode Id="8f725144-10fe-4f28-94c3-b90e5953207a" name="HighscoreDisplay" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="56c8fecd-67bc-4862-9560-e82853c90692" />
+            <objectFlowTargets>
+              <objectFlow Id="d559fad6-a601-4c25-aaa2-1499ec9f7768" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="787ce40f-3263-4e5b-879d-4b49a0f9366d" LastKnownName="Menu button Pressed" />
+                <elementDefinition Id="bc0daa45-8e1d-4c3f-8e39-b49fe94e5172" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="19727c60-798c-4db3-b4e6-4bfec21eedf6" name="2147483647" value="2147483647">
+                <elementDefinition Id="adf30a4f-fc06-44aa-80c6-d5a614c777f4" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <decisionNode Id="c720f9e5-d650-4821-9a87-b341b6a544a9" name="Decision1" isLeaf="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="00dcc084-0fb2-4478-85be-0bf289e8a753" name="TextTemplateBindings" profile="TextTemplateBindings">
+                <elementDefinition Id="99f7a50b-5759-4bfe-9daf-606e8afbc300" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e5502743-5aaf-4425-83a7-355599d100ca">
+                    <propertyInstance Id="b9785ea4-10cb-4a91-8d84-0f6c212652d6" name="Alias">
+                      <elementDefinition Id="ab5a8552-abf3-4c69-af0c-9178958eecb7" />
+                    </propertyInstance>
+                    <elementDefinition Id="0113ef76-aac9-4dcc-a30e-81a4a9789b5d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="75193409-8ec2-4d0f-b970-6f156f3758b7">
+                    <propertyInstance Id="60553602-f68a-4022-b689-c2968f821ff9" name="TemplateFilePath">
+                      <elementDefinition Id="aaef3af4-890c-40b5-8c80-2029dff0fc8a" />
+                    </propertyInstance>
+                    <elementDefinition Id="9cd20ce9-1cd2-493a-b210-a20d424ec801" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="f2ec0dd7-b83c-43f5-8918-43a2f9a17381">
+                    <propertyInstance Id="9ab126d3-4989-409a-8eb1-e388271a180b" name="ProjectPath">
+                      <elementDefinition Id="07c24799-6f27-4044-86ee-7b8724a72724" />
+                    </propertyInstance>
+                    <elementDefinition Id="1f9f5038-123b-4672-8718-3ce8d4b3e673" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e1a3aac5-d950-4387-ae0e-1093480a8c61">
+                    <propertyInstance Id="f1845837-f46b-4b09-9eab-e4576a0f852c" name="TargetDirectory">
+                      <elementDefinition Id="2e5e1c15-eae8-414a-b998-28b4a325b4b4" />
+                    </propertyInstance>
+                    <elementDefinition Id="48b7d08d-8908-461a-8a89-060e9d2a561f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ad2ab03d-aef5-4080-86a8-81094f1d0b4e">
+                    <propertyInstance Id="d676c3de-b93e-4d45-9237-861c95e568b8" name="TargetName">
+                      <elementDefinition Id="30876aae-93d9-4ced-ae80-f1afa9f2026f" />
+                    </propertyInstance>
+                    <elementDefinition Id="8e5d524b-0998-469f-9224-f6e0c0d5db20" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="f75f21e2-5c7c-4092-85e9-bc8238675933">
+                    <propertyInstance Id="6438b906-a81c-4843-87e4-c4cb1d248e68" name="Overwrite">
+                      <elementDefinition Id="847eef8b-ebbd-46bf-9aa7-65f33e62ba0e" />
+                    </propertyInstance>
+                    <elementDefinition Id="5b1a5d67-5ccd-4068-9933-fb2974477eec" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2286bba9-05e6-4ee9-a0bf-3c76eadbd242">
+                    <propertyInstance Id="4b76e814-7094-4348-8718-93cde9cddfd4" name="Parameters">
+                      <elementDefinition Id="86231615-40da-4218-89ff-e6ac14f60dd1" />
+                    </propertyInstance>
+                    <elementDefinition Id="5b33f480-afa2-4de6-8ae4-bb66000c1f61" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="359d0eec-1749-4c38-b03d-a455046ea9b3" />
+            <flowNodeTargets>
+              <controlFlow Id="e5af162e-74ca-4c44-a624-21331a0d6071" guard="Quit button pressed" isLeaf="false">
+                <activityFinalNodeMoniker Id="731a508e-3955-44c0-a17b-a670d54016fd" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="fee00147-1a34-461b-86e2-ed2f5fd33a8f" />
+              </controlFlow>
+            </flowNodeTargets>
+            <objectFlowTargets>
+              <objectFlow Id="6a437aff-3149-4b2b-8526-4de5d9ab2333" guard="Heighscore button pressed" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="8f725144-10fe-4f28-94c3-b90e5953207a" LastKnownName="HighscoreDisplay" />
+                <elementDefinition Id="fb620ee4-af1a-4313-a2d3-5653ce97d848" />
+              </objectFlow>
+              <objectFlow Id="95decb7b-3a2c-4ac8-a8e7-fcffb5e53353" guard="Start button pressed" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="90661b35-69c1-48c7-8c98-438e39880577" LastKnownName="GameManager" />
+                <elementDefinition Id="58c8fdbc-b728-49db-95ff-9ee008fb6aed" />
+              </objectFlow>
+            </objectFlowTargets>
+          </decisionNode>
+          <opaqueAction Id="f92bbf5f-197d-4a6b-9793-5d9096f77f2f" name="Clicks button" isLeaf="false">
+            <elementDefinition Id="262bd1e7-479b-4d83-8f65-b6f686377a2b" />
+            <pins>
+              <opaqueActionHasOutputValues>
+                <outputPin Id="f3c6e187-c95e-4603-bbb3-2f2909398f0d" name="Button pressed" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
+                  <elementDefinition Id="9b509abb-254f-4795-8195-72e881e8eadc" />
+                  <objectFlowTargets>
+                    <objectFlow Id="7697fd59-9318-44f8-8e3f-ed629bb974dd" isLeaf="false" isMulticast="false" isMultireceive="false">
+                      <decisionNodeMoniker Id="c720f9e5-d650-4821-9a87-b341b6a544a9" LastKnownName="Decision1" />
+                      <elementDefinition Id="ed9df29e-875e-42fa-9186-82a66ee1749e" />
+                    </objectFlow>
+                  </objectFlowTargets>
+                  <upperBound>
+                    <literalInteger Id="b53a8bc9-398d-4c4b-88fc-2cb0eb4ef5e7" name="2147483647" value="2147483647">
+                      <elementDefinition Id="18702e70-0602-4c34-ad8f-fa9be423976a" />
+                    </literalInteger>
+                  </upperBound>
+                </outputPin>
+              </opaqueActionHasOutputValues>
+            </pins>
+          </opaqueAction>
+          <opaqueAction Id="787ce40f-3263-4e5b-879d-4b49a0f9366d" name="Menu button Pressed" isLeaf="false">
+            <elementDefinition Id="6d171b0e-3f3f-4981-9dc6-173a8faf0bb0" />
+            <objectFlowTargets>
+              <objectFlow Id="34bb82b9-482c-4a1d-b5f2-c1e4c8f0cc61" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="cccdb4d9-baba-4125-95f0-79c49725b72a" LastKnownName="MenuManager" />
+                <elementDefinition Id="860468f8-30a3-4cc3-ba31-d6c49185e6bc" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction Id="b4334a8e-7f06-451e-8aed-b3d74e1c90bd" name="Game End" isLeaf="false">
+            <elementDefinition Id="a3bf6e1f-7567-46a7-8034-0d9e0a949f9c" />
+            <objectFlowTargets>
+              <objectFlow Id="d98aecf5-b857-4406-8b18-793a38849091" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="cccdb4d9-baba-4125-95f0-79c49725b72a" LastKnownName="MenuManager" />
+                <elementDefinition Id="4ca4523f-1aae-46e8-9f2c-2e86d7001da8" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <activityFinalNode Id="731a508e-3955-44c0-a17b-a670d54016fd" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="81c8214f-3d83-494f-beb8-95d5fa6ac3bd" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="7f5aa52a-4a2a-4140-a22a-583335e294b0" name="ClassDiagram">
+    <elementDefinition Id="15d251ee-3fdc-4697-a414-dd23c8516faa" />
+    <profileInstances>
+      <packageHasProfileInstances Id="5c9c72d2-3913-40dd-b582-9d3c3bf3454f">
+        <profileInstance Id="11c65dbe-a28a-4cd5-8c02-b48ed41d64f0" name="TextTemplateBindings">
+          <elementDefinition Id="cb1b38fe-f81e-4f5e-b0e3-f8d9b836b0f6" />
+        </profileInstance>
+        <elementDefinition Id="a9b3518d-52b8-4ffa-ba7f-97613882b3f7" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="8c4fb1e5-a9a2-4031-a1d6-b70d75c9af5e">
+        <profileInstance Id="4b378fbc-4c5d-4dbc-a9a4-b02bd268c720" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="26d921fb-c9dc-4d0b-adf5-154397f26691">
+        <profileInstance Id="981bc399-89a5-4b02-81b4-79f322f3d766" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>

@@ -1,0 +1,21 @@
+﻿Build started 2014-02-04 16:43:46.
+     1>Project "J:\3dpacman projekt\Some header files\Project1\Project1\Project1.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt AI.cpp Candy.cpp Ghost.cpp Pacman.cpp
+         Pacman.cpp
+     1>j:\3dpacman projekt\some header files\project1\project1\pacman.cpp(5): error C2511: 'Pacman::Pacman(void)' : overloaded member function not found in 'Pacman'
+                 j:\3dpacman projekt\some header files\project1\project1\pacman.h(5) : see declaration of 'Pacman'
+         Ghost.cpp
+     1>j:\3dpacman projekt\some header files\project1\project1\ghost.cpp(5): error C2511: 'Ghost::Ghost(void)' : overloaded member function not found in 'Ghost'
+                 j:\3dpacman projekt\some header files\project1\project1\ghost.h(5) : see declaration of 'Ghost'
+         Candy.cpp
+     1>j:\3dpacman projekt\some header files\project1\project1\candy.cpp(5): error C2511: 'Candy::Candy(void)' : overloaded member function not found in 'Candy'
+                 j:\3dpacman projekt\some header files\project1\project1\candy.h(4) : see declaration of 'Candy'
+         AI.cpp
+     1>j:\3dpacman projekt\some header files\project1\project1\ai.cpp(6): error C2512: 'Ghost' : no appropriate default constructor available
+         Generating Code...
+     1>Done Building Project "J:\3dpacman projekt\Some header files\Project1\Project1\Project1.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:02.66
